@@ -43,8 +43,6 @@ class ExerciseFragment : Fragment(){
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 
-        setHasOptionsMenu(false)
-
         //Get Viewmodel
         viewModel = (activity as MainActivity).viewModel
 
@@ -53,6 +51,11 @@ class ExerciseFragment : Fragment(){
 
         // Get Data of respective drill
         viewModel.getExerciseData(drillId)
+
+        setHasOptionsMenu(false)
+
+        (activity as MainActivity).toolbar.navigationIcon = resources.getDrawable(R.drawable.ic_baseline_arrow_back)
+
     }
 
     override fun onCreateView(
@@ -132,10 +135,10 @@ class ExerciseFragment : Fragment(){
         youtubePlayerView.addYouTubePlayerListener(object : AbstractYouTubePlayerListener() {
             override fun onReady(player: YouTubePlayer) {
                 youTubePlayer = player
+                val videoId = Util.getVideoIdFromUrl(url!!)
+                youTubePlayer.loadVideo(videoId, 0f)
             }
         })
-        val videoId = Util.getVideoIdFromUrl(url!!)
-        youTubePlayer.loadVideo(videoId, 0f)
     }
 
     private fun isViewVisible(view: View): Boolean {
