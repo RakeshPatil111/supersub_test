@@ -1,0 +1,44 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="toolbarStyle">@style/ToolbarStyle</item>
+    </style>
+
+    <!--Toolbar Style-->
+    <style name="ToolbarStyle" parent="Widget.AppCompat.Toolbar">
+        <item name="android:background">#ffffff</item>
+        <item name="android:elevation" tools:targetApi="lollipop">@dimen/toolbar_elevation</item>
+        <item name="titleTextAppearance">@style/ToolbarTitleText</item>
+    </style>
+    <style name="ToolbarTitleText" parent="TextAppearance.Widget.AppCompat.Toolbar.Title">
+        <item name="android:textSize">18sp</item>
+        <item name="android:textColor">@color/colorGreen</item>
+        <item name="android:textAlignment" tools:targetApi="jelly_bean_mr1">center</item>
+        <item name="fontFamily">@font/helvetica_neue_medium</item>
+    </style>
+
+    <style name="TitleTextStyle" parent="TextAppearance.AppCompat.Medium">
+        <item name="android:textSize">20sp</item>
+        <item name="fontFamily">@font/helvetica_neue_black</item>
+        <item name="android:textColor">@color/colorTitleText</item>
+        <item name="android:letterSpacing" tools:targetApi="lollipop">0.05</item>
+    </style>
+
+    <style name="SubTitleTextStyle" parent="TextAppearance.AppCompat.Medium">
+        <item name="android:textSize">14sp</item>
+        <item name="fontFamily">@font/helvetica_neue_medium</item>
+        <item name="android:textColor">@color/colorTitleText</item>
+        <item name="android:letterSpacing" tools:targetApi="lollipop">0.05</item>
+    </style>
+
+    <style name="NormalTitleTextStyle" parent="TextAppearance.AppCompat.Medium">
+        <item name="android:textSize">14sp</item>
+        <item name="fontFamily">@font/helvetica_neue_medium</item>
+        <item name="android:textColor">@color/colorNormalText</item>
+        <item name="android:letterSpacing" tools:targetApi="lollipop">0.05</item>
+    </style>
+</resources>

@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">SuperSub Test</string>
+    <string name="toolbar_title">Feed</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="welcome">Welcome</string>
+    <string name="batting">Batting</string>
+    <string name="drill_title">Shadow Batting</string>
+    <string name="repetitions">Repetitions</string>
+    <string name="infographics">Infographics</string>
+    <string name="equipments">Equipments</string>
+    <string name="api_key">Equipments</string>
+    <string name="menu_search_title">Search</string>
+    <string name="menu_notification_title">Notification</string>
+</resources>
